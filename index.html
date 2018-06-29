@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="section">
+            <div>
+                <h2>css awesome</h2>
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>margin collapse</h2>
+                <div class="b">
+                    <div class="auto transition">
+                        <div class="m flex w100 bg1">box 1</div>
+                    </div>
+                    <div class="auto transition">
+                        <div class="m flex w100 bg2">box 2</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div>
+                <h2>css weight</h2>
+                <div class="b">
+                    <pre class="x2">&lt;div class=&quot;.list&quot; id=&quot;list&quot;&gt;&lt;/div&gt;</pre>                    
+                </div>
+                <div class="b">
+                    <pre class="x2" style="color: blue;">#list { color: blue; }</pre>
+                </div>
+                <div class="b">
+                    <pre class="x2" style="color: red;">.list { color: red; }</pre>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>css weight (cont)</h2>
+                <div class="x2 css-weight">                    
+                    <p class="b bg1">
+                        <span>!important</span>
+                        <span>1,0,0,0,0</span>
+                        <span>10000</span>
+                    </p>
+                    <p class="b bg1">
+                        <span style="color: yellow">style="color: yellow;"</span>
+                        <span>1,0,0,0</span>
+                        <span>1000</span>
+                    </p>
+                    <p class="b bg1">
+                        <span style="color: red">#list { color: red; }</span>
+                        <span>0,1,0,0</span>
+                        <span>0100</span>
+                    </p>
+                    <p class="b bg1">
+                        <span style="color: blue">.list { color: blue; }</span>
+                        <span>0,0,1,0</span>
+                        <span>0010</span>
+                    </p>
+                    <p class="b bg1">
+                        <span style="color: green">div { color: green; }</span>
+                        <span>0,0,0,1</span>
+                        <span>0001</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>css shape 1</h2>
+                <div>
+                    <div class="shape shape1"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>css shape 2</h2>
+                <div>
+                    <div class="shape shape2"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>css shape 3</h2>
+                <div>
+                    <div class="shape shape3"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>transform</h2>
+                <div class="no-anim">
+                    <div class="ball ball2d">2D</div>                    
+                </div>
+                <div class="no-anim">                    
+                    <div class="ball ball3d">3D</div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>css grid</h2>
+                <div>
+                    <div class="grid">
+                        <div class="item1">col 1</div>
+                        <div class="item2">2 span</div>
+                        <div class="item3">col 3</div>
+                        <div class="item4">col 4</div>
+                        <div class="item5">col 5</div>
+                        <div class="item6">col 6</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>tips writing css - modularity - reusibility - structure</h2>
+                <div>
+                    <b class="x2"><a href="http://getbem.com/introduction/" target="_blank">BEM</a></b> - <b class="x2">B</b>lock - <b class="x2">E</b>lement - <b class="x2">M</b>odifiers
+                    <pre class="x2" style="margin-top: 20px">&lt;div class=&quot;box box--red&quot;&gt;
+    &lt;h2 class=&quot;box__title&quot;&gt;&lt;/h2&gt;
+    &lt;article class=&quot;box__content&quot;&gt;&lt;/article&gt;
+    &lt;footer class=&quot;box__footer&quot;&gt;&lt;/footer&gt;
+&lt;/div&gt;</pre>
+                </div>
+                
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>tips writing css - color</h2>
+                <div class="x2">
+                    <pre>.red { color: #f44336; } // hsl(4, 90%, 58%)</pre>
+                    <pre>.red--darken { color: hsl(4, 90%, 48%); }</pre>
+                    <pre>.red--lighten { color: hsl(4, 90%, 68%); }</pre>
+                </div>
+
+                <div class="w200 m red red--darken">.red--darken</div>
+                <div class="w200 m red">.red</div>
+                <div class="w200 m red red--lighten">.red--lighten</div>
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2></h2>
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>useful css selector</h2>
+                <div>
+                    <pre class="x2">&lt;ul class=&quot;ul&quot;&gt;
+    &lt;li&gt;item 1&lt;/li&gt;
+    &lt;li&gt;item 2&lt;/li&gt;
+    &lt;li&gt;item 3&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                </div>
+                <div>
+                    <ul class="ul">
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </div>                
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>useful css selector</h2>                
+                <div>
+                    <pre class="x2" style="margin-top: 20px;">ul.ul li + li {
+    border-top: 1px solid red;
+}</pre>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2>THE END!</h2>
+            </div>
+        </section>
+    </body>
+    <script>
+        window.onkeyup = function(e) {
+            
+            if (e.keyCode === 40) {
+                document.body.scrollTop += window.innerHeight;
+            } else if (e.keyCode === 38) {
+                document.body.scrollTop -= window.innerHeight;
+            }
+        }
+    </script>
+</html>
